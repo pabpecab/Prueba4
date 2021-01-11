@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>Ejercicio 13</title>
+	</head>
+
+	<body>
+		<h1 align="center">UNIDAD DIDÁCTICA 3: Control de versiones</h1>
+
+		<h2>En esta unidad aprenderas ...</h2>
+
+		<ul>
+			<li>
+				Qué es un sistema de control de versiones
+			</li>
+			<li>
+				Las diferencias entre un sistema de control de versiones centralizado y uno distribuido
+			</li>
+			<li>
+				Qué es Git
+			</li>
+			<li>
+				Los posibles estados de un fichero en un repositorio Git
+			</li>
+			<li>
+				Qués es GitHub
+			</li>
+			<li>
+				Cómo usar Git desde la terminal
+			</li>
+			<li>
+				Crear un nuevo proyecto en GitHub
+			</li>
+			<li>
+				Trabajar desde tu ordenador con un proyecto subido a GitHub
+			</li>
+			<li>
+				Especificar que ficheros en local deberán ser ignorados por el servidor remoto
+			</li>
+			<li>
+				Sincronizar el estado de tu proyecto en local con el estado en remoto
+			</li>
+			<li>
+				Sincronizar el estado del proyecto en remoto con los cambios realizado en local
+			</li>
+			<li>
+				Qué es una rama, como crearlas y unirlas.
+			</li>
+			<li>
+				Cuántas ramas debería tener un proyecto y la función de cada una de ellas
+			</li>
+			<li>
+				Cómo volver a una versión anterior del proyecto
+			</li>
+			<li>
+				Cómo trabajar en grupo utilizando Git
+			</li>
+			<li>
+				Qué es un fork y cómo hacerlos
+			</li>
+			<li>
+				Qué es un pull request y como hacerlos
+			</li>
+		</ul>
+
+		<h2>Control de versiones</h2>
+		<p>
+			Un programa de control de versiones es aquel que permite monitorizar los cambios que
+			se producen en un conjunto de ficheros. En principio los programas de control de
+			versiones se asocian al control de cambios en ficheros de código fuente, pero su uso se
+			puede llegar a extrapolar para el control de ficheros relativos a la documentación o
+			incluso a ficheros multimedia.
+		</p>
+		<p>
+			Algunas de las funciones más relevantes de los programas de control de versiones:
+		</p>
+
+		<ul>
+			<li>
+				Tener una copia de seguridad del código del proyecto.
+			</li>
+			<li>
+				Tener un histórico de los cambios realizados a los ficheros.
+			</li>
+			<li>
+				Trabajar con un proyecto desde distintos equipos y que el código esté
+				sincronizado en todos los equpos.
+			</li>
+			<li>
+				Revertir un fichero o proyectos enteros, a un punto pasado determinado. Útil
+				cuando tras algunos cambios el proyecto deja de funcionar. 
+			</li>
+			<li>
+				Si un fichero se pierde o se corrompe se puede recuperar volviendo a un estado
+				anterior. 
+			</li>
+		</ul>
+
+		<p>
+			Hemos expuesto las ventajas que un sistema de control de versiones cuando trabajas
+			tu solo con código tuyo, pero sin duda el principal objetivo de un programa de control de versiones es el de permitir a un grupo de personas trabajar en un mismo proyecto solucionando los problemas derivados del hecho de que varias personas estén trabajando a la vez sobre los mismos ficheros. 
+		</p>
+
+		<h2>Control de versiones centralizado</h2>
+
+		<p>
+			Hay un único servidor que alberga el histórico del proyecto y el resto de clientes del sistema tienen el último estado del proyecto. 
+		</p>
+
+		<p>
+			Este tipo de sistemas han sido los utilizados tradicionalmente, sin embargo tienen el problema de que un fallo en servidor central inhabilita al resto de clientes para trabajar. 
+		</p>
+
+		<h2>Control de versiones distribuido</h2>
+
+		<p>
+			Nacen con el objetivo de solventar los problemas de los sistemas centralizados. Los
+			clientes no sólo tienen la última versión del cliente sino que disponen, en local, del histórico completo del proyecto, de esta forma aunque el servidor central falle el sistema puede volver a restituirse a partir de cualquier nodo.
+		</p>
+
+		<h2>Git</h2>
+
+		<p>
+			Es un programa de control de versiones creado por la comunidad de desarrollo del
+			kernel de Linux. Hasta 2005 utilizaron el programa BitKeeper, pero problemas de
+			comunicación entre ambos equipos desembocaron en que parte de la comunidad de
+			desarrolladores del kernel de Linux creasen un nuevo programa para el control de
+			versiones distribuido: Git. 
+		</p>
+
+		<p>
+			En la mayoría de los sistemas de control de versiones lo que se guarda son los cambios existente entre los ficheros, sin embargo en Git cada vez que un fichero se cambia se guarda una copia entera del fichero. 
+		</p>
+
+		<p>
+			Los ficheros en Git pueden tener el estado ‘tracked’ o ‘untracked’:
+			<ul>
+				<li>
+					<strong>Tracked:</strong>aquellos ficheros cuya existencia es conocida por Git
+				</li>
+				<li>
+					<strong>Untracked:</strong>aquellos ficheros cuya existencia no es conocida por Git
+				</li>
+			</ul>
+		</p>
+		
+		<p>
+			Los ficheros con el estado ‘tracked’ pueden a su vez tener uno de los siguientes tres estados: committed, modificado (modified) y staged.
+			<ul>
+				<li>
+					<strong>Modificado:</strong>el fichero ha sido modificado con respecto al original pero los cambios no han sido guardados.
+				</li>
+				<li>
+					<strong>Staged:</strong>el fichero ha sido marcado para ser almacenado en la base de datos en el próximos commit. 
+				</li>
+				<li>
+					<strong>Commited:</strong> el fichero se encuentra registrado en la base de datos local.
+				</li>
+			</ul>
+		</p>	
+	</body>
+</html>
